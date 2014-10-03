@@ -26,7 +26,9 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 20000; // to make the PoS stable we have 19999 blocks with 0 in rewards
+// to make the PoS stable, PoW with 0 in rewards 72 + 36 hours post ICO
+// Sat Oct 11 03:00:00 2014 EST
+static const int LAST_POW_TIME = 1413010800;
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
